@@ -7,6 +7,9 @@ terraform {
   }
 }
 
+variable "access_key" {}
+variable "secret_key" {}
+
 # Configure the AWS Provider
 provider "aws" {
   region = "us-west-2"
