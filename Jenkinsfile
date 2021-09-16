@@ -15,8 +15,8 @@ pipeline{
         }    
         stage('terraform init'){
             steps{
-                // sh 'terraform init -backend-reconfig="access_key=${AWS_ACCESS_KEY_ID}" -backend-reconfig="secret_key=${AWS_SECRET_ACCESS_KEY}"'
-               'sh terraform init reconfigure'
+                sh 'terraform init -backend-reconfig="access_key=${AWS_ACCESS_KEY_ID}" -backend-reconfig="secret_key=${AWS_SECRET_ACCESS_KEY}"'
+            //    'sh terraform init reconfigure'
                 }
         }
         stage('terraform apply'){
