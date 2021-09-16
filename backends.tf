@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "cicd-terraform-state-testing"
+    bucket = "cicd-pipeline-for-terraform"
     key    = "global/s3/terraform.tfstate"
     region = "us-west-2"
 
