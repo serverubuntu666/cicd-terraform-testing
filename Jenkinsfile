@@ -41,5 +41,10 @@ pipeline {
                 echo "this is a development phase"
             }
         }
+        stage('credentialadded'){
+            steps {
+                echo "git credential added"
+            }
+        }
     }
 }
