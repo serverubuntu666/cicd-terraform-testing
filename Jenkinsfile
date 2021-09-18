@@ -37,7 +37,10 @@ pipeline {
 
     stages {
         stage('dev') {
-            echo 'this is testing stage'
+            echo 'this is development stage'
         }
+        stage('staging') {
+            echo 'this is staging stage'
+        }    
     }
 }
