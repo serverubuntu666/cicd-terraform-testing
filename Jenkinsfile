@@ -37,10 +37,14 @@ pipeline {
 
     stages {
         stage('dev') {
-            echo 'this is development stage'
+            steps {
+                echo 'this is development stage'
+            }
         }
         stage('staging') {
-            echo 'this is staging stage'
+            steps {
+                echo 'this is staging stage'
+            }
         }    
     }
 }
