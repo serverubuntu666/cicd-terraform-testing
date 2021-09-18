@@ -37,7 +37,9 @@ pipeline {
 
     stages {
         stage('dev') {
-            echo 'this is testing stage'
+            steps {
+                echo "this is a development phase"
+            }
         }
     }
 }
